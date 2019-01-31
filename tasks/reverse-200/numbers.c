@@ -7,7 +7,7 @@
 #define FLAG_LENGTH 38
 
 /*
-gcc -o numbers -m32 -O0 -s numbers.c md5_modified.c md5.h
+gcc -o numbers -static -m32 -O0 -s numbers.c md5_modified.c md5.h
 */
 
 
