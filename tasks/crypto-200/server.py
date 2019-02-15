@@ -96,7 +96,7 @@ def unauthorized(storage):
 def main():
     with open('flag.txt', 'rb') as file:
         flag = file.read().strip()
-    storage = Storage()
+    storage = Storage(16)
     print('[*] Hello! Welcome to the secure crypto storage!')
     admin = User('admin', storage.generate_password())
     admin.place_secret(flag)

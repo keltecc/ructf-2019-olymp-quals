@@ -2,6 +2,8 @@
 
 import random
 
+from base64 import b64encode
+from hashlib import md5
 from Crypto.Cipher import AES
 
 
@@ -30,8 +32,7 @@ class User:
         return self._unpad(secret)
 
     def _cipher(self):
-        key = self._password.encode('utf-8')[:16]
-        key += b'\x00' * (16 - len(key))
+        key = md5(self._password.encode('utf-8')).digest()
         return AES.new(key, AES.MODE_ECB)
 
     def _pad(self, data):
@@ -44,9 +45,9 @@ class User:
 
 
 class Storage:
-    def __init__(self):
+    def __init__(self, password_length):
         self._storage = dict()
-        self._generator = PasswordGenerator()
+        self._password_length = int(password_length * 3 / 4)
 
     def add_user(self, user):
         if not self.get_user(user.username):
@@ -56,40 +57,7 @@ class Storage:
         return self._storage.get(username, None)
 
     def generate_password(self):
-        length = 8
-        return self._generator.generate(length)
-
-
-class PasswordGenerator:
-    def __init__(self):
-        self._alphabet = ''.join([
-            'Ok3AaFKHLpZTEoqwd8vC3tMjjDKh2PMf',
-            'pv67c9Zy@qHojoPANtaHXyeWBrigOA$V',
-            'MRa0pHSzBUalVrqh8IRQTEN7wFMUzlbO',
-            '5j5tXXosWW6gE6eVYwRCC@9EkJkQR7Q2',
-            '4YV51$dlo9M1u9iSPVxNUKDdRr5XkpnD',
-            'XUD84szJ$m3FwxU@myTqUg@SVvumDOb2',
-            'J12csWHB0860QuB$vWThFezOAA6fF6EK',
-            '4tiNITfnjuWIAS3iGTe9MrswOgebxFhf',
-            'AGLxFgJq3LZ@1IDnjvQbg58e1nZ1fbTr',
-            'smrIBzaRL9KCextG$o5ns6hZGL3kEQlC',
-            '@s@uCdB5fUg1veNhGU7XblhVt0oP7EuI',
-            'A2b8q5MHic0OPJid0Xlt8RiafZ9@vhHy',
-            'PLVK2wLN$jdIa2yC4wdNX2PqDjFEmYRw',
-            'lkWY1SMcNSyDKpId34T04ckmtb0nsqJB',
-            'nZCPczGJSGLfpx8i4urkozxlWvnYgacO',
-            'pKmzYr7BYyQ64p$7J$7QxmyG3ZSuHY9c'
-        ])
-
-    def generate(self, length):
-        size = 2
-        parts = self._parts(self._alphabet, size)
-        self._shift()
-        return ''.join(random.choice(parts) for _ in range(length))
-
-    def _shift(self):
-        value = 4
-        self._alphabet = self._alphabet[-value:] + self._alphabet[:-value]
-
-    def _parts(self, text, size):
-        return [''.join(part) for part in zip(*(text[i::size] for i in range(size)))]
+        hexlen = 2 * self._password_length
+        bitlen = 4 * hexlen
+        data = hex(random.getrandbits(bitlen))[2:].zfill(hexlen)
+        return b64encode(bytes.fromhex(data), b'@$').decode()
