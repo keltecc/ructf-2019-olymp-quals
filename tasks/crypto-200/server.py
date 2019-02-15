@@ -57,7 +57,7 @@ def create_account(storage):
 
 def handle(user, storage):
     while True:
-        option = select('Place my secret', 'Extract my secret', 'Show user info', 'Log out')
+        option = select('Place a secret', 'Extract the secret', 'Change the password', 'Log out')
         if option == 1:
             print('[*] Please, input your secret')
             secret = input().strip().encode('utf-8')
@@ -65,16 +65,12 @@ def handle(user, storage):
             print('[+] Secret placed successfully', end='\n\n')
         elif option == 2:
             print('[*] Extracting your secret...')
-            print(user.extract_secret())
+            print(user.extract_secret(), end='\n\n')
         elif option == 3:
-            print('[*] Please, enter the username')
-            username = input().strip()
-            user = storage.get_user(username)
-            if not user:
-                print('[-] User does not exist!')
-                continue
-            print('[+] User info:')
-            print(user.get_info())
+            print('[*] Please, enter new password')
+            password = input().strip()
+            user.change_password(password)
+            print('[+] Password changed successfully', end='\n\n')
         elif option == 4:
             print('[+] Logging out', end='\n\n')
             break
