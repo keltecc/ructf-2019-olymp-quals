@@ -1,63 +1,49 @@
 #!/usr/bin/python3
 
-import random
-
-from base64 import b64encode
-from hashlib import md5
-from Crypto.Cipher import AES
+from crypto import Cipher, PasswordGenerator
 
 
-class User:
+class User(object):
     def __init__(self, username, password):
         self.username = username
-        self._password = password
+        self._cipher = Cipher(password)
         self._secret = None
+        self._sign()
 
     def check_password(self, password):
-        return password == self._password
+        cipher = Cipher(password)
+        username = cipher.decrypt(self._signature).decode('utf-8')
+        return username == self.username
 
     def change_password(self, password):
         secret = self.extract_secret()
-        self._password = password
+        self._cipher = Cipher(password)
+        self._sign()
         self.place_secret(secret)
 
     def place_secret(self, secret):
-        secret = self._pad(secret)
-        self._secret = self._cipher().encrypt(secret)
+        self._secret = self._cipher.encrypt(secret)
 
     def extract_secret(self):
         if not self._secret:
             return b''
-        secret = self._cipher().decrypt(self._secret)
-        return self._unpad(secret)
+        return self._cipher.decrypt(self._secret)
 
-    def _cipher(self):
-        key = md5(self._password.encode('utf-8')).digest()
-        return AES.new(key, AES.MODE_ECB)
-
-    def _pad(self, data):
-        byte = 16 - (len(data) % 16)
-        return data + bytes([byte] * byte)
-
-    def _unpad(self, data):
-        byte = data[-1]
-        return data[:-byte]
+    def _sign(self):
+        self._signature = self._cipher.encrypt(self.username.encode('utf-8'))
 
 
-class Storage:
+class Storage(object):
     def __init__(self, password_length):
-        self._storage = dict()
-        self._password_length = int(password_length * 3 / 4)
+        self._users = dict()
+        self._pwgen = PasswordGenerator(password_length)
 
-    def add_user(self, user):
-        if not self.get_user(user.username):
-            self._storage[user.username] = user
+    def add(self, username):
+        if not self.get(username):
+            password = self._pwgen.generate()
+            user = User(username, password)
+            self._users[user.username] = user
+            return user, password
 
-    def get_user(self, username):
-        return self._storage.get(username, None)
-
-    def generate_password(self):
-        hexlen = 2 * self._password_length
-        bitlen = 4 * hexlen
-        data = hex(random.getrandbits(bitlen))[2:].zfill(hexlen)
-        return b64encode(bytes.fromhex(data), b'@$').decode()
+    def get(self, username):
+        return self._users.get(username, None)
