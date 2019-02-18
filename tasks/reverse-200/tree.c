@@ -1,53 +1,51 @@
 #include <stdio.h>
+#include <stdint.h>
+
 #include "matrix.h"
+#include "X_generation.h"
+#include "Y_generation.h"
+
+#define FLAG_LENGTH 38
+
+/*
+gcc tree.c matrix.h matrix.c X_generation.h Y_generation.h -o tree -O0
+*/
+
 
 char* TREE = "                            \n        # #### ####         \n      ### \\/#|### |/####    \n     ##\\/#/ \\||/##/_/##/_#  \n   ###  \\/###|/ \\/ # ###    \n ##_\\_#\\_\\## | #/###_/_#### \n## #### # \\ #| /  #### ##/##\n __#_--###`  |{,###---###-~ \n           \\ }{             \n            }}{             \n            }}{             \n       ejm  {{}             \n      , -=-~{ .-^- _        \n            `}              \n             {              \n                            ";
 
 
-void generate_X(int result[])
+int64_t M[MATRIX_SIZE * MATRIX_SIZE] = {90466200233422083, 10358822019296261, 87638787032622497, 12608206226520044, 48934534699749772, 88320482993772287, 56852002547866029, 104218454201758446, 55407700238782664, 49958558830550231, 39282786815081599, 49628272955217102, 3855654511989151, 7701140981735640, 100753328197566820, 11300132261231580, 66633296076967103, 49190249876379193, 6420713829974651, 44465822466850395, 73175984824050419, 25413023211485930, 50323299390376609, 73855843772137883, 85326584493498175, 36602997579855440, 22784080413188599, 54354047560188437, 71895594665404559, 39744110204900111, 65076559230131093, 89517508437522923, 25547607158636339, 5989324713382610, 33348415035666643, 17934981089391833, 96785184508886712, 63238922649490732, 163809589590985799, 22996988490800890, 87258634429970223, 44544935820019923, 75997842757614752, 2656480097109369, 96137795475038515, 165716344269402542, 18105346185724986, 76516282798981386, 59122211413319727};
+int64_t check()
 {
-    int X_1[MATRIX_SIZE * MATRIX_SIZE];
-    int X_2[MATRIX_SIZE * MATRIX_SIZE];
+	int64_t X[MATRIX_SIZE * MATRIX_SIZE];
+	int64_t Y[MATRIX_SIZE * MATRIX_SIZE];
+	int64_t result[MATRIX_SIZE * MATRIX_SIZE];
 
-    generate_X_1(X_1);
-    generate_X_2(X_2);
+	generate_X_0(X);
+	generate_Y_0(Y);
 
-    matrix_xor(X_1, X_2, result);
+	matrix_modmul(X, Y, M, result);
+
+	return matrix_collapse(result) == 49;
 }
 
-void generate_Y(int result[])
+int64_t main(int argc, char** argv, char** envp)
 {
-    int Y_1[MATRIX_SIZE * MATRIX_SIZE];
-    int value = 6719;
+    char buffer[FLAG_LENGTH + 1];
 
-    generate_Y_1(Y_1);
+    printf("[*] Hello! Please, enter the flag\n");
+    fgets(buffer, FLAG_LENGTH + 1, stdin);
+
+    for (int64_t i = 0; i < FLAG_LENGTH; i++)
+    {
+        matrix_X_0_0_0_0_0_0_0[i] = buffer[i];
+    }
     
-    matrix_intmod(X_1, value, result);
-}
-
-void generate_M(int result[])
-{
-    
-}
-
-
-int main(int argc, char** argv, char** envp)
-{
-    int X[MATRIX_SIZE * MATRIX_SIZE];
-    int Y[MATRIX_SIZE * MATRIX_SIZE];
-    int M[MATRIX_SIZE * MATRIX_SIZE];
-
-    int result[MATRIX_SIZE * MATRIX_SIZE];
-    
-    generate_X(X);
-    generate_Y(Y);
-    generate_M(M);
-
-    matrix_modmul(X, Y, M, result);
-
-    int collapse = matrix_collapse(result);
-
-    printf("%d\n", collapse);
+    if (check())
+        printf("[+] Correct flag :)\n");
+    else
+        printf("[-] Wrong flag :(\n");
 
     return 0;
 }

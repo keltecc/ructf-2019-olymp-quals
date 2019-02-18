@@ -1,31 +1,33 @@
+#include <stdint.h>
+
 #ifndef H_MATRIX
 #define H_MATRIX
 
-#define MATRIX_SIZE 3
+#define MATRIX_SIZE 7
 
 
-void matrix_print(int matrix[]);
-void matrix_fill(int value, int result[]);
+void matrix_print(int64_t matrix[]);
+void matrix_fill(int64_t value, int64_t result[]);
 
-int matrix_get(int matrix[], int x, int y);
-void matrix_set(int matrix[], int x, int y, int value);
+int64_t matrix_get(int64_t matrix[], int64_t x, int64_t y);
+void matrix_set(int64_t matrix[], int64_t x, int64_t y, int64_t value);
 
-int matrix_collapse(int matrix[]);
-void matrix_transpose(int matrix[], int result[]);
+int64_t matrix_collapse(int64_t matrix[]);
+void matrix_transpose(int64_t matrix[], int64_t result[]);
 
-void matrix_sum(int first[], int second[], int result[]);
-void matrix_intsum(int matrix[], int value, int result[]);
+void matrix_sum(int64_t first[], int64_t second[], int64_t result[]);
+void matrix_intsum(int64_t matrix[], int64_t value, int64_t result[]);
 
-void matrix_xor(int first[], int second[], int result[]);
-void matrix_intxor(int matrix[], int value, int result[]);
+void matrix_xor(int64_t first[], int64_t second[], int64_t result[]);
+void matrix_intxor(int64_t matrix[], int64_t value, int64_t result[]);
 
-void matrix_mul(int first[], int second[], int result[]);
-void matrix_intmul(int matrix[], int value, int result[]);
+void matrix_mul(int64_t first[], int64_t second[], int64_t result[]);
+void matrix_intmul(int64_t matrix[], int64_t value, int64_t result[]);
 
-void matrix_mod(int first[], int second[], int result[]);
-void matrix_intmod(int matrix[], int value, int result[]);
+void matrix_mod(int64_t first[], int64_t second[], int64_t result[]);
+void matrix_intmod(int64_t matrix[], int64_t value, int64_t result[]);
 
-void matrix_modmul(int first[], int second[], int modulus[], int result[]);
-void matrix_intmodmul(int first[], int second[], int modulus, int result[]);
+void matrix_modmul(int64_t first[], int64_t second[], int64_t modulus[], int64_t result[]);
+void matrix_intmodmul(int64_t first[], int64_t second[], int64_t modulus, int64_t result[]);
 
 #endif
