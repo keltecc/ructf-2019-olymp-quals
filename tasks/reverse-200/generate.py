@@ -34,7 +34,7 @@ WEIGHTS = {
     'matrix_intsum': 4,
     'matrix_xor': 6,
     'matrix_intxor': 4,
-    'matrix_mul': 10,
+    'matrix_mul': 6,
     'matrix_intmul': 4,
     'matrix_mod': 10,
     'matrix_intmod': 8,
@@ -157,6 +157,7 @@ def generate(engine, command, symbol, level, matrixes, correct):
     assert all(x < 2 ** 62 for x in sum(need, [])), 'bigger!'
 
     expr = expr.replace('engine.do("matrix_', '').replace('")', '')
+    code.extend(['/* ', '* result', '* ' + c_matrix(need), '* ' + repr(need), '*/', '\n'])
     code.extend(['/* ', '* full expression', '* ' + expr, '*/', '\n'])
 
     if correct:
