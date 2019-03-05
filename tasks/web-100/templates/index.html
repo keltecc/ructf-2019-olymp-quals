@@ -1,7 +1,31 @@
-{% if error %}
-    <p>{{ error}}</p>
-{% endif %}
-{% if username %}
-    <p>{{ username}}</p>
-{% endif %}
-<p>index</p>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Notes</title>
+        <link rel="stylesheet" href="/styles.css">
+    </head>
+    <body>
+        <div class="head">
+            <span class="titl">Notes</span>
+            <span class="usrn">({{ session['username'] }}, <a href="/logout">logout</a>)</span>
+        </div>
+        <div class="main">
+            {% if error %}
+                <h1 class="eror">{{ error }}</h1>
+            {% endif %}
+            <h1>Save your note here!</h1>
+            <form method="post" action="/">
+                <input type="text" name="filename" placeholder="name.txt"><br>
+                <textarea name="content" class="area">just a note...</textarea><br>
+                <input type="submit" value="Send note">
+            </form>
+            {% if files|length > 0 %}
+                <h1>List of your notes:</h1>
+                {% for file in files %}
+                    <a href="/read?filename={{ file|urlencode }}" target="_blank">{{ file|escape }}</a><br>
+                {% endfor %}
+            {% endif %}
+        </div>
+    <!-- sorry for the design -->
+    </body>
+</html>

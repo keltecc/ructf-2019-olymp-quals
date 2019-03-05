@@ -1,4 +1,23 @@
-{% if error %}
-    <p>{{ error}}</p>
-{% endif %}
-<p>login</p>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Notes</title>
+        <link rel="stylesheet" href="/styles.css">
+    </head>
+    <body>
+        <div class="head">
+            <span class="titl">Notes</span>
+        </div>
+        <div class="main">
+            {% if error %}
+                <h1 class="eror">{{ error }}</h1>
+            {% endif %}
+            <h1>Login:</h1>
+            <form method="post" action="/login">
+                <input type="text" name="username" placeholder="george">
+                <input type="submit" value="Login">
+            </form>
+        </div>
+    <!-- sorry for the design -->
+    </body>
+</html>
