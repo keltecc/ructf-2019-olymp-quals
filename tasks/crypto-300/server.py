@@ -3,7 +3,7 @@
 from ui import UI
 from rsa import RSA
 
-from Crypto.Util.number import bytes_to_long
+from Crypto.Util.number import GCD, bytes_to_long
 
 
 def read_flag():
@@ -16,6 +16,7 @@ def check_secret(secret):
     assert secret.p.bit_length() == secret.bits
     assert secret.q.bit_length() == secret.bits
     assert secret.e < secret.bits
+    assert GCD(secret.e, (secret.p - 1) * (secret.q - 1)) == 1
 
 
 def main():
