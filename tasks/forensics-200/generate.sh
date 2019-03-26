@@ -2,14 +2,12 @@
 
 flag=$(cat flag.txt)
 
-./text2img.py "$flag" "flag_original.png"
-./encoder "flag_original.png" "flag.png"
+./write_text.py "$flag" "bliss.png" "secret.png"
 
 password=$(pwgen -1 -s 50)
 
 echo "$password" > password.txt
 
-zip "secret.zip" -0 "flag.png" --password "$password"
-zip "secret.zip" -0 "encoder" --password "$password"
+zip "secret.zip" -0 "secret.png" --password "$password"
 
-rm "flag_original.png" "flag.png"
+rm "secret.png"
