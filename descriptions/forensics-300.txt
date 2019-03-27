@@ -1,0 +1,4 @@
+Noise
+300
+
+Our agency was looking for Professor Noise for a long time. We've finally found his computer, but it's hard to extract any sensitive data from it. Can you help us?
