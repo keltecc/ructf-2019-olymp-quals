@@ -94,12 +94,12 @@ if (!isset($_SESSION["username"]) && (!isset($_GET["action"]) || $_GET["action"]
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Notes</title>
+        <title>Voting System</title>
         <link rel="stylesheet" href="/files/styles.css">
     </head>
     <body>
         <div class="head">
-            <a href="/" class="titl">Voting System</a>
+            <a href="/" class="titl">Voting system</a>
 <?php 
 
 if (isset($_SESSION["username"]))
