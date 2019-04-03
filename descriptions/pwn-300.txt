@@ -3,4 +3,6 @@ Guessing
 
 If you think you're a guessing master, then try to solve this!
 
-__Note: this challenge doesn't include a guessing part__
+_Note: this challenge doesn't include a guessing part_
+
+`nc tasks.kelte.cc 2003`

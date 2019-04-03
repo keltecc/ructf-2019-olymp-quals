@@ -2,3 +2,5 @@ Firewall
 300
 
 OMG! These hackers have got to me! They've set up the firewall, so I can't use encryption now! Can you find a way to bypass hackers firewall?
+
+`nc tasks.kelte.cc 1003`

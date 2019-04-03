@@ -2,3 +2,5 @@ Back To Basics
 100
 
 You'll quickly complete this easy math challenge, right?
+
+`nc tasks.kelte.cc 1001`

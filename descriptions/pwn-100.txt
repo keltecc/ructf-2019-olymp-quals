@@ -2,3 +2,5 @@ Baby Stack
 100
 
 Attention! That stack is only for babies! Please, stand away from it.
+
+`nc tasks.kelte.cc 2001`
