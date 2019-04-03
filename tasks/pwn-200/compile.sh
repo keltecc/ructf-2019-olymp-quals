@@ -1,3 +1,3 @@
 #!/bin/bash
 
-gcc -o "guessing" -O0 "guessing.c"
+gcc -o babies -O0 -fno-stack-protector babies.c
