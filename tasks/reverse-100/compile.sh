@@ -1,4 +1,3 @@
 #!/bin/bash
 
-movcc movie.c -o movie -s
-upx -9 movie
+gcc -o cipher -O0 cipher.c
