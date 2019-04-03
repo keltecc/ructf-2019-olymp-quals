@@ -1,0 +1,5 @@
+flag.txt
+server.py
+static/*
+templates/*
+utils.py

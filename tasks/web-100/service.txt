@@ -1,0 +1,6 @@
+static/*
+server.cgi
+index.html
+flag.txt
+files.txt
+404.html

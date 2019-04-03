@@ -1,0 +1,3 @@
+files/*
+flag.txt
+index.php
