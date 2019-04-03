@@ -1,0 +1,11 @@
+version: '2.3'
+services:
+  task:
+    build: .
+    restart: always
+    ports:
+      - "0.0.0.0:3333:7777"
+    pids_limit: 100
+    ulimits: 
+      nproc: 100
+    mem_limit: 512m
