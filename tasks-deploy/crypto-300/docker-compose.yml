@@ -4,7 +4,7 @@ services:
     build: .
     restart: always
     ports:
-      - "0.0.0.0:2222:7777"
+      - "0.0.0.0:1003:7777"
     pids_limit: 100
     ulimits: 
       nproc: 100

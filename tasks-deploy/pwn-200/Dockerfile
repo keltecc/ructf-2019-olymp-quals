@@ -13,9 +13,11 @@ RUN useradd -M task
 
 COPY ./xinetd/xinetd.conf /etc/xinetd.d/service
 COPY ./xinetd/start_xinetd.sh /start_xinetd.sh
+COPY ./start.sh /start.sh
 
 RUN chmod 400 /etc/xinetd.d/service && \
-    chmod 100 /start_xinetd.sh
+    chmod 100 /start_xinetd.sh && \
+    chmod 555 /start.sh
 
 
 RUN mkdir -p /service/
@@ -27,6 +29,9 @@ COPY ./service/ ./
 
 RUN chmod 111 ./bandit && \
     chmod 444 ./flag.txt
+
+
+ENV PYTHONUNBUFFERED 1
 
 
 CMD ["/start_xinetd.sh"]
