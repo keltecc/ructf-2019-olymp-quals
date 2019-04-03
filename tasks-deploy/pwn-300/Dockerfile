@@ -17,9 +17,7 @@ COPY ./start.sh /start.sh
 
 RUN chmod 400 /etc/xinetd.d/service && \
     chmod 100 /start_xinetd.sh && \
-    chmod 555 /start.sh && \
-    mv ./libc-2.25.so /lib/x86_64-linux-gnu/libc-2.25.so && \
-    ln -s /lib/x86_64-linux-gnu/libc-2.25.so /lib/x86_64-linux-gnu/libc.so.6
+    chmod 555 /start.sh
 
 
 RUN mkdir -p /service/
@@ -30,7 +28,9 @@ COPY ./service/ ./
 
 
 RUN chmod 111 ./guessing && \
-    chmod 444 ./flag.txt
+    chmod 444 ./flag.txt && \
+    mv ./libc-2.25.so /lib/x86_64-linux-gnu/libc-2.25.so && \
+    ln -s /lib/x86_64-linux-gnu/libc-2.25.so /lib/x86_64-linux-gnu/libc.so.6
 
 
 ENV PYTHONUNBUFFERED 1
