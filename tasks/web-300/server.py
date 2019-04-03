@@ -65,6 +65,6 @@ def _put_flag():
         write_file('admin', filename, file.read())
 
 
+_put_flag()
 if __name__ == '__main__':
-    _put_flag()
     app.run('0.0.0.0', port=8888, threaded=True)
