@@ -1,4 +1,6 @@
-TBA
+Guessing
 300
 
-TBA
+If you think you're a guessing master, then try to solve this!
+
+__Note: this challenge doesn't include a guessing part__

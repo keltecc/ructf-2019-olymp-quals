@@ -1,4 +1,4 @@
-TBA
+Blind Bandit
 200
 
-TBA
+You're going on the road and meeting the bandit. He is completely blind, but you think he may have a secret weapon. Your actions?

@@ -1,4 +1,6 @@
-TBA
+Simple Hosting
 300
 
-TBA
+This hosting is as simple as simple its security. Can you hack it?
+
+__Note: this challenge includes a guessing part!__

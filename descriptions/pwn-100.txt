@@ -1,4 +1,4 @@
-Blind Bandit
+Baby Stack
 100
 
-You're going on the road and meeting the bandit. He is completely blind, but you think he may have a secret weapon. Your actions?
+Attention! That stack is only for babies! Please, stand away from it.
