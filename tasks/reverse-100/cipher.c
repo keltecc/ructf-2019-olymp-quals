@@ -9,8 +9,8 @@ gcc -o cipher -O0 cipher.c
 */
 
 
-char expected[FLAG_LENGTH] = {52, 25, 34, 51, 61, 38, 86, 123, 105, 83, 85, 93, 6, 93, 105, 24, 0, 55, 58, 67, 82, 119, 93, 89, 82, 104, 66, 84, 90, 10, 102, 92, 5, 82, 83, 90, 12, 72};
-char key[FLAG_LENGTH] = "flag{yoO_k1ddo_y0U_waNnna_s0m3_h4ck??}";
+char expected[FLAG_LENGTH] = {52, 25, 34, 51, 61, 38, 86, 123, 105, 83, 85, 93, 6, 93, 105, 24, 0, 55, 58, 67, 82, 119, 93, 86, 108, 68, 1, 9, 4, 102, 81, 0, 82, 90, 7, 90, 78, 53};
+char key[FLAG_LENGTH] = "flag{yoO_k1ddo_y0U_waNna_s0m3_h4ck??}\x00";
 
 int check_flag(char buffer[])
 {
