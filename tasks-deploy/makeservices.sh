@@ -16,3 +16,5 @@ for task in $tasks; do
         cp -r "$original/$file" "$this/service/"
     done
 done
+
+chmod -R 777 "./web-200/service/files/"
