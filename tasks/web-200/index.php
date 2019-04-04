@@ -41,7 +41,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 break;
             }
             $_SESSION["username"] = $_POST["username"];
-            $_SESSION["avatar"] = "./files/avatar.png";
             $_SESSION["is_admin"] = 0;
             dump_config([
                 "city" => "unknown",
@@ -65,16 +64,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             }
             dump_config($_POST);
             $_SESSION["message"] = "Your settings was updated succesfully.";
-            break;
-
-        case "upload":
-            if (!isset($_FILES["avatar"]) || $_FILES["avatar"]["error"] != 0)
-                break;
-            $content = file_get_contents($_FILES["avatar"]["tmp_name"]);
-            $filename = "./files/".sha1($content);
-            file_put_contents($filename, $content);
-            $_SESSION["avatar"] = $filename;
-            $_SESSION["message"] = "Avatar was changed succesfully.";
             break;
 
         case "vote":
@@ -143,12 +132,12 @@ switch ($_GET["action"]) {
 
 ?>
             <h1>Account settings:</h1>
-            <img src="<?php echo $_SESSION["avatar"]; ?>" >
+            <img src="https://thispersondoesnotexist.com" >
             <form method="post" action="/?action=profile">
 <?php
 
     foreach ($user_config as $key => $value) {
-        if ($key == "avatar" || $key == "username" || $key == "is_admin")
+        if ($key == "username" || $key == "is_admin")
             continue;
         echo "                <label for=\"$key\">$key</label>\n";
         echo "                <input type=\"text\" id=\"$key\" name=\"$key\" value=\"$value\"><br>\n";
@@ -156,10 +145,6 @@ switch ($_GET["action"]) {
 
 ?>
                 <input type="submit" value="Update">
-            </form><br>
-            <form method="post" action="/?action=upload" enctype="multipart/form-data">
-                <input type="file" name="avatar">
-                <input type="submit" value="Change avatar">
             </form>
 <?php
 
