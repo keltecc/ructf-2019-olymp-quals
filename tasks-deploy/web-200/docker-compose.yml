@@ -16,4 +16,4 @@ services:
         restart: always
         volumes:
             - "./php/php.ini:/usr/local/etc/php/conf.d/php.ini"
-            - "./service:/var/www/html"
+            - "./service:/var/www/task"
