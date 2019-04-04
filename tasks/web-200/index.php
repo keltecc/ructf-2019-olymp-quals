@@ -132,7 +132,7 @@ switch ($_GET["action"]) {
 
 ?>
             <h1>Account settings:</h1>
-            <img src="https://thispersondoesnotexist.com" >
+            <img src="https://thispersondoesnotexist.com/image" >
             <form method="post" action="/?action=profile">
 <?php
 
