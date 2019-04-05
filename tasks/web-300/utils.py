@@ -34,15 +34,21 @@ def read_file(username, filename):
         return 'error: hacking attempt detected!'
     if not isfile(path):
         return 'error: file does not exist!'
-    with open(path, 'rb') as file:
-        return file.read()
+    try:
+        with open(path, 'rb') as file:
+            return file.read()
+    except Exception:
+        return ''
 
 
 def write_file(username, filename, content):
     path = _build_path(username, filename)
-    _create_dir_if_not_exist(dirname(path))
-    with open(path, 'wb') as file:
-        file.write(content.encode())
+    try:
+        _create_dir_if_not_exist(dirname(path))
+        with open(path, 'wb') as file:
+            file.write(content.encode())
+    except Exception:
+        pass
 
 
 def _create_dir_if_not_exist(path):
