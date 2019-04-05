@@ -181,5 +181,6 @@ switch ($_GET["action"]) {
 
 ?>
         <!-- sorry for the design, this was our inspiration: https://www.youtube.com/watch?v=ly5QGZVaQqk -->
+        </div>
     </body>
 </html>
