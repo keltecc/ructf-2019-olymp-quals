@@ -20,3 +20,6 @@ done
 chmod -R 777 "./web-100/service/files/"
 chmod -R 777 "./web-200/service/files/"
 chmod -R 777 "./web-300/service/data/"
+
+mkdir "./web-200/flag/"
+mv "./web-200/service/flag.txt" "./web-200/flag/flag.txt"
