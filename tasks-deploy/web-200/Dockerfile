@@ -15,7 +15,8 @@ RUN mv /var/www/task/flag.txt /opt/flag.txt
 
 RUN chmod 555 /var/www/task/server.cgi && \
     chmod 444 /opt/flag.txt && \
-    chmod 555 /start.sh
+    chmod 555 /start.sh && \
+    chmod 777 /var/www/task/files/
 
 
 CMD ["/start.sh"]

@@ -32,13 +32,13 @@ elif [[ "$REQUEST_METHOD" == "POST" ]]; then
         echo
         url="${BASH_REMATCH[1]}"
         filename="$(echo ${REMOTE_ADDR} | md5sum | cut -d ' ' -f 1)"
-        wget -qT1 -t1 -O "./files/${filename}" "$(urldecode ${url})"
+        wget -qT1 -t1 -O "/var/www/task/files/${filename}" "$(urldecode ${url})"
         if [[ "$?" == "0" ]]; then
             echo "Host is up for me :)"
         else
             echo "Host is down for me :("
         fi
-        rm "./files/${filename}"
+        rm "/var/www/task/files/${filename}"
     else
         echo "Location: /"
         echo
