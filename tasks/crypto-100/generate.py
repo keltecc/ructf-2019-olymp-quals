@@ -2,13 +2,14 @@
 
 import sys
 
+from gmpy2 import next_prime
 from random import randint
 
 
 def make_modulus(bits):
     bits >>= 1
-    p = randint(2**(bits-1), 2**bits)
-    q = randint(2**(bits-1), 2**bits)
+    p = next_prime(randint(2**(bits-1), 2**bits))
+    q = next_prime(randint(2**(bits-1), 2**bits))
     return p * q
 
 
