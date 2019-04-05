@@ -4,3 +4,4 @@ static/
 templates/
 utils.py
 requirements.txt
+data/
