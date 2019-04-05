@@ -9,7 +9,7 @@ COPY ./service .
 COPY ./gunicorn .
 
 RUN pip install --no-cache-dir -r requirements.txt
-
+RUN python3 -c "import server"
 
 EXPOSE 80
 
