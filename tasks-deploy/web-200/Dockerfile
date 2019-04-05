@@ -1,8 +1,7 @@
 FROM ubuntu:18.04
 
 RUN apt update
-RUN apt install -y nginx
-RUN apt install -y fcgiwrap
+RUN apt install -y nginx fcgiwrap wget
 
 
 COPY ./start.sh /start.sh

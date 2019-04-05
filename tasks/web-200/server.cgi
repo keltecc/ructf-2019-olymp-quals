@@ -1,4 +1,4 @@
-i#!/bin/bash
+#!/bin/bash
 
 
 # https://stackoverflow.com/a/37840948
