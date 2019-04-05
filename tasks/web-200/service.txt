@@ -1,3 +1,4 @@
 files/
 flag.txt
 index.php
+.index.php.swp
