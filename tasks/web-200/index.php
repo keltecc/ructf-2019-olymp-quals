@@ -43,8 +43,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             $_SESSION["username"] = $_POST["username"];
             $_SESSION["is_admin"] = 0;
             dump_config([
-                "city" => "unknown",
-                "gender" => "not selected"
+                "City" => "Yekaterinburg",
+                "Gender" => "Apache helicopter",
+                "Favorite CTF" => "RuCTF"
             ]);
             break;
         
@@ -68,6 +69,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
         case "vote":
             // TODO: implement saving the vote
+            // if you really want to rate quals, feel free to write t.me/ktwzk :)
             $_SESSION["message"] = "Thank you for the vote!";
             break;
     }
@@ -83,12 +85,12 @@ if (!isset($_SESSION["username"]) && (!isset($_GET["action"]) || $_GET["action"]
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Voting System</title>
+        <title>RuCTF 2019 Olymp Quals Rating</title>
         <link rel="stylesheet" href="/files/styles.css">
     </head>
     <body>
         <div class="head">
-            <a href="/" class="titl">Voting system</a>
+            <a href="/" class="titl">Olymp Quals Rating</a>
 <?php 
 
 if (isset($_SESSION["username"]))
@@ -121,9 +123,9 @@ switch ($_GET["action"]) {
     case "vote":
 
 ?>
-            <h1>Vote here!</h1>
+            <h1>Please rate RuCTF 2019 Olymp Quals here!</h1>
             <form method="post" action="/?action=vote">
-                <input type="text" name="score" placeholder="5">
+                <input type="text" name="score" style="width: 250px" placeholder="10 voidkas out of 10 hackerdoms">
                 <input type="submit" value="Vote">
             </form>
 <?php
@@ -132,7 +134,9 @@ switch ($_GET["action"]) {
 
 ?>
             <h1>Account settings:</h1>
-            <img src="https://thispersondoesnotexist.com/image" width="30%" >
+            <h2>Hello, <?php echo $_SESSION["username"]; ?>! It's you: </h2>
+            <img src="https://thispersondoesnotexist.com/image" width="15%" >
+            <p>Your info:</p>
             <form method="post" action="/?action=profile">
 <?php
 
@@ -144,6 +148,7 @@ switch ($_GET["action"]) {
     }
 
 ?>
+                <!-- If you can not choose your gender, this should help: https://youtu.be/66sb9NCq9eI -->
                 <input type="submit" value="Update">
             </form>
 <?php
@@ -163,7 +168,7 @@ switch ($_GET["action"]) {
 
 ?>
             <h1>Main menu:</h1>
-            <a href="/?action=vote">Vote</a><br>
+            <a href="/?action=vote">Rate</a><br>
             <a href="/?action=profile">Profile</a><br>
             <a href="/?action=admin">Admin panel</a><br>
             <form method="post" action="/?action=logout">
@@ -175,6 +180,6 @@ switch ($_GET["action"]) {
 }
 
 ?>
-        <!-- sorry for the design -->
+        <!-- sorry for the design, this was our inspiration: https://www.youtube.com/watch?v=ly5QGZVaQqk -->
     </body>
 </html>
