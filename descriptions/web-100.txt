@@ -1,6 +1,6 @@
-Uptime
+Feedback
 100
 
-Is your website down? Or not? Is my website down? I don't know, but you know, I think. Now I give you an opensource tool. Please, contribute!
+Please, rate RuCTF Olymp Quals. We've tried to make a good feedback form in vim, so it took too much time just to close it. But anyway we're waiting for your vote!
 
 http://tasks.kelte.cc:3001
