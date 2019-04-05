@@ -17,5 +17,6 @@ for task in $tasks; do
     done
 done
 
+chmod -R 777 "./web-100/service/files/"
 chmod -R 777 "./web-200/service/files/"
 chmod -R 777 "./web-300/service/data/"
