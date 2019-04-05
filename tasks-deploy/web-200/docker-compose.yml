@@ -5,7 +5,6 @@ services:
         volumes:
             - "./nginx/nginx.conf:/etc/nginx/conf.d/default.conf"
             - "./service:/var/www/task/"
-            - "./flag/flag.txt:/opt/flag.txt"
             - "./logs:/var/log/nginx/"
         ports:
             - "0.0.0.0:3002:80"
@@ -16,4 +15,8 @@ services:
         image: wilkesystems/fcgiwrap
         volumes:
             - "./service:/var/www/task"
+            - "./flag/flag.txt:/opt/flag.txt"
         restart: always
+        environment:
+            - FCGI_SOCKET=tcp:0.0.0.0:9000
+            - FCGI_USER=root
