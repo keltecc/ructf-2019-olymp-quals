@@ -1,33 +1,243 @@
-2019/04/05 03:01:15 [emerg] 1#1: invalid port in upstream "tcp:cgi:9000" in /etc/nginx/conf.d/default.conf:20
-2019/04/05 03:01:20 [emerg] 1#1: invalid port in upstream "tcp:cgi:9000" in /etc/nginx/conf.d/default.conf:20
-2019/04/05 03:01:23 [emerg] 1#1: invalid port in upstream "tcp:cgi:9000" in /etc/nginx/conf.d/default.conf:20
-2019/04/05 03:01:26 [emerg] 1#1: invalid port in upstream "tcp:cgi:9000" in /etc/nginx/conf.d/default.conf:20
-2019/04/05 03:01:29 [emerg] 1#1: invalid port in upstream "tcp:cgi:9000" in /etc/nginx/conf.d/default.conf:20
-2019/04/05 03:12:19 [emerg] 11#0: "gzip" directive is duplicate in /etc/nginx/conf.d/default.conf:1
-2019/04/05 03:12:26 [emerg] 10#0: "gzip" directive is duplicate in /etc/nginx/conf.d/default.conf:1
-2019/04/05 03:12:31 [emerg] 9#0: "gzip" directive is duplicate in /etc/nginx/conf.d/default.conf:1
-2019/04/05 03:12:35 [emerg] 9#0: "gzip" directive is duplicate in /etc/nginx/conf.d/default.conf:1
-2019/04/05 03:12:38 [emerg] 10#0: "gzip" directive is duplicate in /etc/nginx/conf.d/default.conf:1
-2019/04/05 03:12:42 [emerg] 10#0: "gzip" directive is duplicate in /etc/nginx/conf.d/default.conf:1
-2019/04/05 03:12:47 [emerg] 10#0: "gzip" directive is duplicate in /etc/nginx/conf.d/default.conf:1
-2019/04/05 03:12:55 [emerg] 10#0: "gzip" directive is duplicate in /etc/nginx/conf.d/default.conf:1
-2019/04/05 03:13:10 [emerg] 10#0: "gzip" directive is duplicate in /etc/nginx/conf.d/default.conf:1
-2019/04/05 03:13:37 [emerg] 9#0: "gzip" directive is duplicate in /etc/nginx/conf.d/default.conf:1
-2019/04/05 03:14:35 [emerg] 9#0: "gzip" directive is duplicate in /etc/nginx/conf.d/default.conf:1
-2019/04/05 03:15:48 [emerg] 11#0: "gzip" directive is duplicate in /etc/nginx/conf.d/default.conf:1
-2019/04/05 03:17:13 [emerg] 10#0: "gzip" directive is duplicate in /etc/nginx/conf.d/default.conf:1
-2019/04/05 03:17:29 [emerg] 9#0: "gzip" directive is duplicate in /etc/nginx/conf.d/default.conf:1
-2019/04/05 03:17:41 [emerg] 9#0: "gzip" directive is duplicate in /etc/nginx/conf.d/default.conf:1
-2019/04/05 03:17:51 [emerg] 10#0: "gzip" directive is duplicate in /etc/nginx/conf.d/default.conf:1
-2019/04/05 03:18:04 [emerg] 9#0: "gzip" directive is duplicate in /etc/nginx/conf.d/default.conf:1
-2019/04/05 03:18:16 [emerg] 11#0: "gzip" directive is duplicate in /etc/nginx/conf.d/default.conf:1
-2019/04/05 03:25:00 [emerg] 11#0: "gzip" directive is duplicate in /etc/nginx/conf.d/default.conf:1
-2019/04/05 03:25:12 [emerg] 10#0: "gzip" directive is duplicate in /etc/nginx/conf.d/default.conf:1
-2019/04/05 03:25:28 [emerg] 10#0: "gzip" directive is duplicate in /etc/nginx/conf.d/default.conf:1
-2019/04/05 03:25:45 [emerg] 9#0: "gzip" directive is duplicate in /etc/nginx/conf.d/default.conf:1
-2019/04/05 03:25:56 [emerg] 10#0: "gzip" directive is duplicate in /etc/nginx/conf.d/default.conf:1
-2019/04/05 03:26:08 [emerg] 15#0: "gzip" directive is duplicate in /etc/nginx/conf.d/default.conf:1
-2019/04/05 03:26:23 [emerg] 10#0: "gzip" directive is duplicate in /etc/nginx/conf.d/default.conf:1
-2019/04/05 03:26:40 [emerg] 12#0: "gzip" directive is duplicate in /etc/nginx/conf.d/default.conf:1
-2019/04/05 03:27:02 [emerg] 10#0: "gzip" directive is duplicate in /etc/nginx/conf.d/default.conf:1
-2019/04/05 03:27:46 [emerg] 10#0: "gzip" directive is duplicate in /etc/nginx/conf.d/default.conf:1
+2019/04/04 10:03:02 [emerg] 1#1: "user" directive is not allowed here in /etc/nginx/conf.d/default.conf:1
+2019/04/04 10:03:08 [emerg] 1#1: "user" directive is not allowed here in /etc/nginx/conf.d/default.conf:1
+2019/04/04 10:03:11 [emerg] 1#1: "user" directive is not allowed here in /etc/nginx/conf.d/default.conf:1
+2019/04/04 10:03:14 [emerg] 1#1: "user" directive is not allowed here in /etc/nginx/conf.d/default.conf:1
+2019/04/04 10:03:18 [emerg] 1#1: "user" directive is not allowed here in /etc/nginx/conf.d/default.conf:1
+2019/04/04 10:03:22 [emerg] 1#1: "user" directive is not allowed here in /etc/nginx/conf.d/default.conf:1
+2019/04/04 10:03:27 [emerg] 1#1: "user" directive is not allowed here in /etc/nginx/conf.d/default.conf:1
+2019/04/04 10:03:36 [emerg] 1#1: "user" directive is not allowed here in /etc/nginx/conf.d/default.conf:1
+2019/04/04 10:03:51 [emerg] 1#1: "user" directive is not allowed here in /etc/nginx/conf.d/default.conf:1
+2019/04/04 10:04:18 [emerg] 1#1: "user" directive is not allowed here in /etc/nginx/conf.d/default.conf:1
+2019/04/04 10:05:11 [emerg] 1#1: "user" directive is not allowed here in /etc/nginx/conf.d/default.conf:1
+2019/04/04 10:06:13 [emerg] 1#1: "user" directive is not allowed here in /etc/nginx/conf.d/default.conf:1
+2019/04/04 10:07:15 [emerg] 1#1: "user" directive is not allowed here in /etc/nginx/conf.d/default.conf:1
+2019/04/04 10:08:17 [emerg] 1#1: "user" directive is not allowed here in /etc/nginx/conf.d/default.conf:1
+2019/04/04 10:09:19 [emerg] 1#1: "user" directive is not allowed here in /etc/nginx/conf.d/default.conf:1
+2019/04/04 10:10:21 [emerg] 1#1: "user" directive is not allowed here in /etc/nginx/conf.d/default.conf:1
+2019/04/04 10:11:23 [emerg] 1#1: "user" directive is not allowed here in /etc/nginx/conf.d/default.conf:1
+2019/04/04 10:12:50 [emerg] 1#1: "worker_processes" directive is not allowed here in /etc/nginx/conf.d/default.conf:1
+2019/04/04 10:12:53 [emerg] 1#1: "worker_processes" directive is not allowed here in /etc/nginx/conf.d/default.conf:1
+2019/04/04 10:12:56 [emerg] 1#1: "worker_processes" directive is not allowed here in /etc/nginx/conf.d/default.conf:1
+2019/04/04 10:13:47 [emerg] 1#1: "sendfile" directive is duplicate in /etc/nginx/conf.d/default.conf:1
+2019/04/04 10:13:50 [emerg] 1#1: "sendfile" directive is duplicate in /etc/nginx/conf.d/default.conf:1
+2019/04/04 10:13:53 [emerg] 1#1: "sendfile" directive is duplicate in /etc/nginx/conf.d/default.conf:1
+2019/04/04 10:13:57 [emerg] 1#1: "sendfile" directive is duplicate in /etc/nginx/conf.d/default.conf:1
+2019/04/04 10:14:47 [emerg] 1#1: "http" directive is not allowed here in /etc/nginx/conf.d/default.conf:1
+2019/04/04 10:14:50 [emerg] 1#1: "http" directive is not allowed here in /etc/nginx/conf.d/default.conf:1
+2019/04/04 10:14:54 [emerg] 1#1: "http" directive is not allowed here in /etc/nginx/conf.d/default.conf:1
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/mime.types:3
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/mime.types:3
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/mime.types:3
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/mime.types:4
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "xml", content type: "text/xml", previous content type: "text/xml" in /etc/nginx/mime.types:5
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "gif", content type: "image/gif", previous content type: "image/gif" in /etc/nginx/mime.types:6
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "jpeg", content type: "image/jpeg", previous content type: "image/jpeg" in /etc/nginx/mime.types:7
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "jpg", content type: "image/jpeg", previous content type: "image/jpeg" in /etc/nginx/mime.types:7
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/mime.types:8
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "atom", content type: "application/atom+xml", previous content type: "application/atom+xml" in /etc/nginx/mime.types:9
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "rss", content type: "application/rss+xml", previous content type: "application/rss+xml" in /etc/nginx/mime.types:10
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "mml", content type: "text/mathml", previous content type: "text/mathml" in /etc/nginx/mime.types:12
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "txt", content type: "text/plain", previous content type: "text/plain" in /etc/nginx/mime.types:13
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "jad", content type: "text/vnd.sun.j2me.app-descriptor", previous content type: "text/vnd.sun.j2me.app-descriptor" in /etc/nginx/mime.types:14
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "wml", content type: "text/vnd.wap.wml", previous content type: "text/vnd.wap.wml" in /etc/nginx/mime.types:15
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "htc", content type: "text/x-component", previous content type: "text/x-component" in /etc/nginx/mime.types:16
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "png", content type: "image/png", previous content type: "image/png" in /etc/nginx/mime.types:18
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "svg", content type: "image/svg+xml", previous content type: "image/svg+xml" in /etc/nginx/mime.types:19
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "svgz", content type: "image/svg+xml", previous content type: "image/svg+xml" in /etc/nginx/mime.types:19
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "tif", content type: "image/tiff", previous content type: "image/tiff" in /etc/nginx/mime.types:20
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "tiff", content type: "image/tiff", previous content type: "image/tiff" in /etc/nginx/mime.types:20
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "wbmp", content type: "image/vnd.wap.wbmp", previous content type: "image/vnd.wap.wbmp" in /etc/nginx/mime.types:21
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "webp", content type: "image/webp", previous content type: "image/webp" in /etc/nginx/mime.types:22
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "ico", content type: "image/x-icon", previous content type: "image/x-icon" in /etc/nginx/mime.types:23
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "jng", content type: "image/x-jng", previous content type: "image/x-jng" in /etc/nginx/mime.types:24
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "bmp", content type: "image/x-ms-bmp", previous content type: "image/x-ms-bmp" in /etc/nginx/mime.types:25
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "woff", content type: "application/font-woff", previous content type: "application/font-woff" in /etc/nginx/mime.types:27
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "jar", content type: "application/java-archive", previous content type: "application/java-archive" in /etc/nginx/mime.types:28
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "war", content type: "application/java-archive", previous content type: "application/java-archive" in /etc/nginx/mime.types:28
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "ear", content type: "application/java-archive", previous content type: "application/java-archive" in /etc/nginx/mime.types:28
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "json", content type: "application/json", previous content type: "application/json" in /etc/nginx/mime.types:29
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "hqx", content type: "application/mac-binhex40", previous content type: "application/mac-binhex40" in /etc/nginx/mime.types:30
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "doc", content type: "application/msword", previous content type: "application/msword" in /etc/nginx/mime.types:31
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "pdf", content type: "application/pdf", previous content type: "application/pdf" in /etc/nginx/mime.types:32
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "ps", content type: "application/postscript", previous content type: "application/postscript" in /etc/nginx/mime.types:33
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "eps", content type: "application/postscript", previous content type: "application/postscript" in /etc/nginx/mime.types:33
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "ai", content type: "application/postscript", previous content type: "application/postscript" in /etc/nginx/mime.types:33
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "rtf", content type: "application/rtf", previous content type: "application/rtf" in /etc/nginx/mime.types:34
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "m3u8", content type: "application/vnd.apple.mpegurl", previous content type: "application/vnd.apple.mpegurl" in /etc/nginx/mime.types:35
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "kml", content type: "application/vnd.google-earth.kml+xml", previous content type: "application/vnd.google-earth.kml+xml" in /etc/nginx/mime.types:36
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "kmz", content type: "application/vnd.google-earth.kmz", previous content type: "application/vnd.google-earth.kmz" in /etc/nginx/mime.types:37
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "xls", content type: "application/vnd.ms-excel", previous content type: "application/vnd.ms-excel" in /etc/nginx/mime.types:38
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "eot", content type: "application/vnd.ms-fontobject", previous content type: "application/vnd.ms-fontobject" in /etc/nginx/mime.types:39
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "ppt", content type: "application/vnd.ms-powerpoint", previous content type: "application/vnd.ms-powerpoint" in /etc/nginx/mime.types:40
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "odg", content type: "application/vnd.oasis.opendocument.graphics", previous content type: "application/vnd.oasis.opendocument.graphics" in /etc/nginx/mime.types:41
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "odp", content type: "application/vnd.oasis.opendocument.presentation", previous content type: "application/vnd.oasis.opendocument.presentation" in /etc/nginx/mime.types:42
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "ods", content type: "application/vnd.oasis.opendocument.spreadsheet", previous content type: "application/vnd.oasis.opendocument.spreadsheet" in /etc/nginx/mime.types:43
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "odt", content type: "application/vnd.oasis.opendocument.text", previous content type: "application/vnd.oasis.opendocument.text" in /etc/nginx/mime.types:44
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "pptx", content type: "application/vnd.openxmlformats-officedocument.presentationml.presentation", previous content type: "application/vnd.openxmlformats-officedocument.presentationml.presentation" in /etc/nginx/mime.types:46
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "xlsx", content type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", previous content type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" in /etc/nginx/mime.types:48
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "docx", content type: "application/vnd.openxmlformats-officedocument.wordprocessingml.document", previous content type: "application/vnd.openxmlformats-officedocument.wordprocessingml.document" in /etc/nginx/mime.types:50
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "wmlc", content type: "application/vnd.wap.wmlc", previous content type: "application/vnd.wap.wmlc" in /etc/nginx/mime.types:51
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "7z", content type: "application/x-7z-compressed", previous content type: "application/x-7z-compressed" in /etc/nginx/mime.types:52
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "cco", content type: "application/x-cocoa", previous content type: "application/x-cocoa" in /etc/nginx/mime.types:53
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "jardiff", content type: "application/x-java-archive-diff", previous content type: "application/x-java-archive-diff" in /etc/nginx/mime.types:54
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "jnlp", content type: "application/x-java-jnlp-file", previous content type: "application/x-java-jnlp-file" in /etc/nginx/mime.types:55
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "run", content type: "application/x-makeself", previous content type: "application/x-makeself" in /etc/nginx/mime.types:56
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "pl", content type: "application/x-perl", previous content type: "application/x-perl" in /etc/nginx/mime.types:57
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "pm", content type: "application/x-perl", previous content type: "application/x-perl" in /etc/nginx/mime.types:57
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "prc", content type: "application/x-pilot", previous content type: "application/x-pilot" in /etc/nginx/mime.types:58
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "pdb", content type: "application/x-pilot", previous content type: "application/x-pilot" in /etc/nginx/mime.types:58
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "rar", content type: "application/x-rar-compressed", previous content type: "application/x-rar-compressed" in /etc/nginx/mime.types:59
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "rpm", content type: "application/x-redhat-package-manager", previous content type: "application/x-redhat-package-manager" in /etc/nginx/mime.types:60
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "sea", content type: "application/x-sea", previous content type: "application/x-sea" in /etc/nginx/mime.types:61
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "swf", content type: "application/x-shockwave-flash", previous content type: "application/x-shockwave-flash" in /etc/nginx/mime.types:62
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "sit", content type: "application/x-stuffit", previous content type: "application/x-stuffit" in /etc/nginx/mime.types:63
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "tcl", content type: "application/x-tcl", previous content type: "application/x-tcl" in /etc/nginx/mime.types:64
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "tk", content type: "application/x-tcl", previous content type: "application/x-tcl" in /etc/nginx/mime.types:64
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "der", content type: "application/x-x509-ca-cert", previous content type: "application/x-x509-ca-cert" in /etc/nginx/mime.types:65
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "pem", content type: "application/x-x509-ca-cert", previous content type: "application/x-x509-ca-cert" in /etc/nginx/mime.types:65
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "crt", content type: "application/x-x509-ca-cert", previous content type: "application/x-x509-ca-cert" in /etc/nginx/mime.types:65
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "xpi", content type: "application/x-xpinstall", previous content type: "application/x-xpinstall" in /etc/nginx/mime.types:66
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "xhtml", content type: "application/xhtml+xml", previous content type: "application/xhtml+xml" in /etc/nginx/mime.types:67
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "xspf", content type: "application/xspf+xml", previous content type: "application/xspf+xml" in /etc/nginx/mime.types:68
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "zip", content type: "application/zip", previous content type: "application/zip" in /etc/nginx/mime.types:69
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "bin", content type: "application/octet-stream", previous content type: "application/octet-stream" in /etc/nginx/mime.types:71
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "exe", content type: "application/octet-stream", previous content type: "application/octet-stream" in /etc/nginx/mime.types:71
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "dll", content type: "application/octet-stream", previous content type: "application/octet-stream" in /etc/nginx/mime.types:71
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "deb", content type: "application/octet-stream", previous content type: "application/octet-stream" in /etc/nginx/mime.types:72
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "dmg", content type: "application/octet-stream", previous content type: "application/octet-stream" in /etc/nginx/mime.types:73
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "iso", content type: "application/octet-stream", previous content type: "application/octet-stream" in /etc/nginx/mime.types:74
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "img", content type: "application/octet-stream", previous content type: "application/octet-stream" in /etc/nginx/mime.types:74
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "msi", content type: "application/octet-stream", previous content type: "application/octet-stream" in /etc/nginx/mime.types:75
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "msp", content type: "application/octet-stream", previous content type: "application/octet-stream" in /etc/nginx/mime.types:75
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "msm", content type: "application/octet-stream", previous content type: "application/octet-stream" in /etc/nginx/mime.types:75
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "mid", content type: "audio/midi", previous content type: "audio/midi" in /etc/nginx/mime.types:77
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "midi", content type: "audio/midi", previous content type: "audio/midi" in /etc/nginx/mime.types:77
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "kar", content type: "audio/midi", previous content type: "audio/midi" in /etc/nginx/mime.types:77
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "mp3", content type: "audio/mpeg", previous content type: "audio/mpeg" in /etc/nginx/mime.types:78
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "ogg", content type: "audio/ogg", previous content type: "audio/ogg" in /etc/nginx/mime.types:79
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "m4a", content type: "audio/x-m4a", previous content type: "audio/x-m4a" in /etc/nginx/mime.types:80
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "ra", content type: "audio/x-realaudio", previous content type: "audio/x-realaudio" in /etc/nginx/mime.types:81
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "3gpp", content type: "video/3gpp", previous content type: "video/3gpp" in /etc/nginx/mime.types:83
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "3gp", content type: "video/3gpp", previous content type: "video/3gpp" in /etc/nginx/mime.types:83
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "ts", content type: "video/mp2t", previous content type: "video/mp2t" in /etc/nginx/mime.types:84
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "mp4", content type: "video/mp4", previous content type: "video/mp4" in /etc/nginx/mime.types:85
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "mpeg", content type: "video/mpeg", previous content type: "video/mpeg" in /etc/nginx/mime.types:86
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "mpg", content type: "video/mpeg", previous content type: "video/mpeg" in /etc/nginx/mime.types:86
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "mov", content type: "video/quicktime", previous content type: "video/quicktime" in /etc/nginx/mime.types:87
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "webm", content type: "video/webm", previous content type: "video/webm" in /etc/nginx/mime.types:88
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "flv", content type: "video/x-flv", previous content type: "video/x-flv" in /etc/nginx/mime.types:89
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "m4v", content type: "video/x-m4v", previous content type: "video/x-m4v" in /etc/nginx/mime.types:90
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "mng", content type: "video/x-mng", previous content type: "video/x-mng" in /etc/nginx/mime.types:91
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "asx", content type: "video/x-ms-asf", previous content type: "video/x-ms-asf" in /etc/nginx/mime.types:92
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "asf", content type: "video/x-ms-asf", previous content type: "video/x-ms-asf" in /etc/nginx/mime.types:92
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "wmv", content type: "video/x-ms-wmv", previous content type: "video/x-ms-wmv" in /etc/nginx/mime.types:93
+2019/04/04 10:16:12 [warn] 1#1: duplicate extension "avi", content type: "video/x-msvideo", previous content type: "video/x-msvideo" in /etc/nginx/mime.types:94
+2019/04/04 10:16:12 [emerg] 1#1: "default_type" directive is duplicate in /etc/nginx/conf.d/default.conf:2
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/mime.types:3
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/mime.types:3
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/mime.types:3
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/mime.types:4
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "xml", content type: "text/xml", previous content type: "text/xml" in /etc/nginx/mime.types:5
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "gif", content type: "image/gif", previous content type: "image/gif" in /etc/nginx/mime.types:6
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "jpeg", content type: "image/jpeg", previous content type: "image/jpeg" in /etc/nginx/mime.types:7
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "jpg", content type: "image/jpeg", previous content type: "image/jpeg" in /etc/nginx/mime.types:7
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/mime.types:8
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "atom", content type: "application/atom+xml", previous content type: "application/atom+xml" in /etc/nginx/mime.types:9
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "rss", content type: "application/rss+xml", previous content type: "application/rss+xml" in /etc/nginx/mime.types:10
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "mml", content type: "text/mathml", previous content type: "text/mathml" in /etc/nginx/mime.types:12
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "txt", content type: "text/plain", previous content type: "text/plain" in /etc/nginx/mime.types:13
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "jad", content type: "text/vnd.sun.j2me.app-descriptor", previous content type: "text/vnd.sun.j2me.app-descriptor" in /etc/nginx/mime.types:14
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "wml", content type: "text/vnd.wap.wml", previous content type: "text/vnd.wap.wml" in /etc/nginx/mime.types:15
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "htc", content type: "text/x-component", previous content type: "text/x-component" in /etc/nginx/mime.types:16
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "png", content type: "image/png", previous content type: "image/png" in /etc/nginx/mime.types:18
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "svg", content type: "image/svg+xml", previous content type: "image/svg+xml" in /etc/nginx/mime.types:19
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "svgz", content type: "image/svg+xml", previous content type: "image/svg+xml" in /etc/nginx/mime.types:19
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "tif", content type: "image/tiff", previous content type: "image/tiff" in /etc/nginx/mime.types:20
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "tiff", content type: "image/tiff", previous content type: "image/tiff" in /etc/nginx/mime.types:20
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "wbmp", content type: "image/vnd.wap.wbmp", previous content type: "image/vnd.wap.wbmp" in /etc/nginx/mime.types:21
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "webp", content type: "image/webp", previous content type: "image/webp" in /etc/nginx/mime.types:22
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "ico", content type: "image/x-icon", previous content type: "image/x-icon" in /etc/nginx/mime.types:23
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "jng", content type: "image/x-jng", previous content type: "image/x-jng" in /etc/nginx/mime.types:24
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "bmp", content type: "image/x-ms-bmp", previous content type: "image/x-ms-bmp" in /etc/nginx/mime.types:25
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "woff", content type: "application/font-woff", previous content type: "application/font-woff" in /etc/nginx/mime.types:27
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "jar", content type: "application/java-archive", previous content type: "application/java-archive" in /etc/nginx/mime.types:28
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "war", content type: "application/java-archive", previous content type: "application/java-archive" in /etc/nginx/mime.types:28
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "ear", content type: "application/java-archive", previous content type: "application/java-archive" in /etc/nginx/mime.types:28
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "json", content type: "application/json", previous content type: "application/json" in /etc/nginx/mime.types:29
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "hqx", content type: "application/mac-binhex40", previous content type: "application/mac-binhex40" in /etc/nginx/mime.types:30
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "doc", content type: "application/msword", previous content type: "application/msword" in /etc/nginx/mime.types:31
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "pdf", content type: "application/pdf", previous content type: "application/pdf" in /etc/nginx/mime.types:32
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "ps", content type: "application/postscript", previous content type: "application/postscript" in /etc/nginx/mime.types:33
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "eps", content type: "application/postscript", previous content type: "application/postscript" in /etc/nginx/mime.types:33
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "ai", content type: "application/postscript", previous content type: "application/postscript" in /etc/nginx/mime.types:33
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "rtf", content type: "application/rtf", previous content type: "application/rtf" in /etc/nginx/mime.types:34
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "m3u8", content type: "application/vnd.apple.mpegurl", previous content type: "application/vnd.apple.mpegurl" in /etc/nginx/mime.types:35
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "kml", content type: "application/vnd.google-earth.kml+xml", previous content type: "application/vnd.google-earth.kml+xml" in /etc/nginx/mime.types:36
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "kmz", content type: "application/vnd.google-earth.kmz", previous content type: "application/vnd.google-earth.kmz" in /etc/nginx/mime.types:37
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "xls", content type: "application/vnd.ms-excel", previous content type: "application/vnd.ms-excel" in /etc/nginx/mime.types:38
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "eot", content type: "application/vnd.ms-fontobject", previous content type: "application/vnd.ms-fontobject" in /etc/nginx/mime.types:39
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "ppt", content type: "application/vnd.ms-powerpoint", previous content type: "application/vnd.ms-powerpoint" in /etc/nginx/mime.types:40
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "odg", content type: "application/vnd.oasis.opendocument.graphics", previous content type: "application/vnd.oasis.opendocument.graphics" in /etc/nginx/mime.types:41
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "odp", content type: "application/vnd.oasis.opendocument.presentation", previous content type: "application/vnd.oasis.opendocument.presentation" in /etc/nginx/mime.types:42
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "ods", content type: "application/vnd.oasis.opendocument.spreadsheet", previous content type: "application/vnd.oasis.opendocument.spreadsheet" in /etc/nginx/mime.types:43
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "odt", content type: "application/vnd.oasis.opendocument.text", previous content type: "application/vnd.oasis.opendocument.text" in /etc/nginx/mime.types:44
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "pptx", content type: "application/vnd.openxmlformats-officedocument.presentationml.presentation", previous content type: "application/vnd.openxmlformats-officedocument.presentationml.presentation" in /etc/nginx/mime.types:46
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "xlsx", content type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", previous content type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" in /etc/nginx/mime.types:48
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "docx", content type: "application/vnd.openxmlformats-officedocument.wordprocessingml.document", previous content type: "application/vnd.openxmlformats-officedocument.wordprocessingml.document" in /etc/nginx/mime.types:50
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "wmlc", content type: "application/vnd.wap.wmlc", previous content type: "application/vnd.wap.wmlc" in /etc/nginx/mime.types:51
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "7z", content type: "application/x-7z-compressed", previous content type: "application/x-7z-compressed" in /etc/nginx/mime.types:52
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "cco", content type: "application/x-cocoa", previous content type: "application/x-cocoa" in /etc/nginx/mime.types:53
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "jardiff", content type: "application/x-java-archive-diff", previous content type: "application/x-java-archive-diff" in /etc/nginx/mime.types:54
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "jnlp", content type: "application/x-java-jnlp-file", previous content type: "application/x-java-jnlp-file" in /etc/nginx/mime.types:55
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "run", content type: "application/x-makeself", previous content type: "application/x-makeself" in /etc/nginx/mime.types:56
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "pl", content type: "application/x-perl", previous content type: "application/x-perl" in /etc/nginx/mime.types:57
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "pm", content type: "application/x-perl", previous content type: "application/x-perl" in /etc/nginx/mime.types:57
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "prc", content type: "application/x-pilot", previous content type: "application/x-pilot" in /etc/nginx/mime.types:58
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "pdb", content type: "application/x-pilot", previous content type: "application/x-pilot" in /etc/nginx/mime.types:58
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "rar", content type: "application/x-rar-compressed", previous content type: "application/x-rar-compressed" in /etc/nginx/mime.types:59
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "rpm", content type: "application/x-redhat-package-manager", previous content type: "application/x-redhat-package-manager" in /etc/nginx/mime.types:60
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "sea", content type: "application/x-sea", previous content type: "application/x-sea" in /etc/nginx/mime.types:61
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "swf", content type: "application/x-shockwave-flash", previous content type: "application/x-shockwave-flash" in /etc/nginx/mime.types:62
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "sit", content type: "application/x-stuffit", previous content type: "application/x-stuffit" in /etc/nginx/mime.types:63
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "tcl", content type: "application/x-tcl", previous content type: "application/x-tcl" in /etc/nginx/mime.types:64
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "tk", content type: "application/x-tcl", previous content type: "application/x-tcl" in /etc/nginx/mime.types:64
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "der", content type: "application/x-x509-ca-cert", previous content type: "application/x-x509-ca-cert" in /etc/nginx/mime.types:65
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "pem", content type: "application/x-x509-ca-cert", previous content type: "application/x-x509-ca-cert" in /etc/nginx/mime.types:65
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "crt", content type: "application/x-x509-ca-cert", previous content type: "application/x-x509-ca-cert" in /etc/nginx/mime.types:65
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "xpi", content type: "application/x-xpinstall", previous content type: "application/x-xpinstall" in /etc/nginx/mime.types:66
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "xhtml", content type: "application/xhtml+xml", previous content type: "application/xhtml+xml" in /etc/nginx/mime.types:67
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "xspf", content type: "application/xspf+xml", previous content type: "application/xspf+xml" in /etc/nginx/mime.types:68
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "zip", content type: "application/zip", previous content type: "application/zip" in /etc/nginx/mime.types:69
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "bin", content type: "application/octet-stream", previous content type: "application/octet-stream" in /etc/nginx/mime.types:71
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "exe", content type: "application/octet-stream", previous content type: "application/octet-stream" in /etc/nginx/mime.types:71
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "dll", content type: "application/octet-stream", previous content type: "application/octet-stream" in /etc/nginx/mime.types:71
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "deb", content type: "application/octet-stream", previous content type: "application/octet-stream" in /etc/nginx/mime.types:72
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "dmg", content type: "application/octet-stream", previous content type: "application/octet-stream" in /etc/nginx/mime.types:73
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "iso", content type: "application/octet-stream", previous content type: "application/octet-stream" in /etc/nginx/mime.types:74
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "img", content type: "application/octet-stream", previous content type: "application/octet-stream" in /etc/nginx/mime.types:74
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "msi", content type: "application/octet-stream", previous content type: "application/octet-stream" in /etc/nginx/mime.types:75
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "msp", content type: "application/octet-stream", previous content type: "application/octet-stream" in /etc/nginx/mime.types:75
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "msm", content type: "application/octet-stream", previous content type: "application/octet-stream" in /etc/nginx/mime.types:75
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "mid", content type: "audio/midi", previous content type: "audio/midi" in /etc/nginx/mime.types:77
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "midi", content type: "audio/midi", previous content type: "audio/midi" in /etc/nginx/mime.types:77
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "kar", content type: "audio/midi", previous content type: "audio/midi" in /etc/nginx/mime.types:77
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "mp3", content type: "audio/mpeg", previous content type: "audio/mpeg" in /etc/nginx/mime.types:78
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "ogg", content type: "audio/ogg", previous content type: "audio/ogg" in /etc/nginx/mime.types:79
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "m4a", content type: "audio/x-m4a", previous content type: "audio/x-m4a" in /etc/nginx/mime.types:80
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "ra", content type: "audio/x-realaudio", previous content type: "audio/x-realaudio" in /etc/nginx/mime.types:81
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "3gpp", content type: "video/3gpp", previous content type: "video/3gpp" in /etc/nginx/mime.types:83
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "3gp", content type: "video/3gpp", previous content type: "video/3gpp" in /etc/nginx/mime.types:83
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "ts", content type: "video/mp2t", previous content type: "video/mp2t" in /etc/nginx/mime.types:84
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "mp4", content type: "video/mp4", previous content type: "video/mp4" in /etc/nginx/mime.types:85
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "mpeg", content type: "video/mpeg", previous content type: "video/mpeg" in /etc/nginx/mime.types:86
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "mpg", content type: "video/mpeg", previous content type: "video/mpeg" in /etc/nginx/mime.types:86
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "mov", content type: "video/quicktime", previous content type: "video/quicktime" in /etc/nginx/mime.types:87
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "webm", content type: "video/webm", previous content type: "video/webm" in /etc/nginx/mime.types:88
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "flv", content type: "video/x-flv", previous content type: "video/x-flv" in /etc/nginx/mime.types:89
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "m4v", content type: "video/x-m4v", previous content type: "video/x-m4v" in /etc/nginx/mime.types:90
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "mng", content type: "video/x-mng", previous content type: "video/x-mng" in /etc/nginx/mime.types:91
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "asx", content type: "video/x-ms-asf", previous content type: "video/x-ms-asf" in /etc/nginx/mime.types:92
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "asf", content type: "video/x-ms-asf", previous content type: "video/x-ms-asf" in /etc/nginx/mime.types:92
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "wmv", content type: "video/x-ms-wmv", previous content type: "video/x-ms-wmv" in /etc/nginx/mime.types:93
+2019/04/04 10:16:15 [warn] 1#1: duplicate extension "avi", content type: "video/x-msvideo", previous content type: "video/x-msvideo" in /etc/nginx/mime.types:94
+2019/04/04 10:16:15 [emerg] 1#1: "default_type" directive is duplicate in /etc/nginx/conf.d/default.conf:2
