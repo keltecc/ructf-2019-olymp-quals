@@ -1,4 +1,4 @@
-#!/bin/bash
+i#!/bin/bash
 
 
 # https://stackoverflow.com/a/37840948
@@ -20,7 +20,7 @@ if [[ "${REQUEST_METHOD}" == "GET" ]]; then
     elif [[ "$REQUEST_PATH" == "/admin" ]]; then
         echo "Content-Type: text/plain"
         echo
-        cat "flag.txt"
+        cat "/opt/flag.txt"
     else
         echo "Content-Type: text/html"
         echo
@@ -32,7 +32,7 @@ elif [[ "$REQUEST_METHOD" == "POST" ]]; then
         echo
         url="${BASH_REMATCH[1]}"
         filename="$(echo ${REMOTE_ADDR} | md5sum | cut -d ' ' -f 1)"
-        wget -qT0 -O "./static/${filename}" "$(urldecode ${url})"
+        wget -qT1 -t1 -O "./files/${filename}" "$(urldecode ${url})"
         if [[ "$?" == "0" ]]; then
             echo "Host is up for me :)"
         else

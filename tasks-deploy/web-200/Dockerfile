@@ -8,6 +8,7 @@ RUN apt install -y fcgiwrap
 COPY ./start.sh /start.sh
 COPY ./service /var/www/task/
 COPY ./nginx/nginx.conf /etc/nginx/sites-available/default
+COPY ./fcgiwrap/fcgiwrap.init /etc/init.d/fcgiwrap
 
 
 RUN mv /var/www/task/flag.txt /opt/flag.txt
