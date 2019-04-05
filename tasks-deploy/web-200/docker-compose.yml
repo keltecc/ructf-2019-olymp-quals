@@ -1,11 +1,11 @@
 version: '2.3'
 services:
-    task:
-        build: .
-        volumes:
-            - "./nginx/nginx.conf:/etc/nginx/conf.d/default.conf"
-            - "./service:/var/www/task/"
-            - "./logs:/var/log/nginx/"
-        ports:
-            - "0.0.0.0:3002:80"
-        restart: always
+  task:
+    build: .
+    volumes:
+      - "./nginx/nginx.conf:/etc/nginx/conf.d/default.conf"
+      - "./service:/var/www/task/"
+      - "./logs:/var/log/nginx/"
+    ports:
+      - "0.0.0.0:3002:80"
+    restart: always
