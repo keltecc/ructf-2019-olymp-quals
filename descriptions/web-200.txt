@@ -1,7 +1,7 @@
 Feedback
 200
 
-Please, rate RuCTF Olymp Quals. We've made it really quick and had no time to make good feedback form (maybe this form isn't done yet too). We're waiting for your votes!
+Please, rate RuCTF Olymp Quals. We've tried to make a good feedback form in vim, so it took too much time just to close it. But anyway we're waiting for your vote!
 
 http://tasks.kelte.cc:3002
 
