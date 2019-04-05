@@ -1,4 +1,4 @@
-static/
+files/
 server.cgi
 index.html
 flag.txt

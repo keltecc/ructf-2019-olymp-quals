@@ -38,7 +38,7 @@ elif [[ "$REQUEST_METHOD" == "POST" ]]; then
         else
             echo "Host is down for me :("
         fi
-        rm "./static/${filename}"
+        rm "./files/${filename}"
     else
         echo "Location: /"
         echo
