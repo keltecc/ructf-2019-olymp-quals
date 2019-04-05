@@ -1,6 +1,6 @@
 flag.txt
 server.py
-static/*
-templates/*
+static/
+templates/
 utils.py
 requirements.txt
