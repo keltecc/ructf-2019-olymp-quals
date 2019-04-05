@@ -1,4 +1,6 @@
 files/
+server.cgi
+index.html
 flag.txt
-index.php
-.index.php.swp
+files.txt
+404.html

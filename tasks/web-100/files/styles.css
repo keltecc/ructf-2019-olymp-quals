@@ -8,6 +8,11 @@
 .titl {
     font-weight: bold;
     font-size: 40px;
+    text-decoration: none;
+}
+
+.titl:visited {
+    color: #ffffff;
 }
 
 .usrn {
