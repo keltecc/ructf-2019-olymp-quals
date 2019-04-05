@@ -1,6 +1,7 @@
-Don't Vote
+Feedback
 200
 
-You have no reason to vote here. It's absolutely useless. I know, the author hasn't finished it yet. Can you find a breach?
+Please, rate RuCTF Olymp Quals. We've made it really quick and had no time to make good feedback form (maybe this form isn't done yet too). We're waiting for your votes!
 
 http://tasks.kelte.cc:3002
+
