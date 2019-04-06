@@ -9,9 +9,6 @@
 #define MAX_STRING_LENGTH 255
 
 
-// gcc -o guessing -O0 guessing.c
-
-
 typedef struct
 {
     int length;
@@ -50,9 +47,9 @@ void welcome(string* name, string* city)
     input_string(city);
 
     fputs("[+] Hello, ", stdout);
-    fputs(name->content, stdout);
+    fwrite(name->content, 1, name->length, stdout);
     fputs(" from ", stdout);
-    fputs(city->content, stdout);
+    fwrite(city->content, 1, city->length, stdout);
     fputs("!\n\n", stdout);
 }
 

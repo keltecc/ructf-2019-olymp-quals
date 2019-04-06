@@ -1,3 +1,3 @@
 #!/bin/bash
 
-gcc -o "guessing" -O0 "guessing.c"
+gcc -o "guessing" -std=c89 "guessing.c"
