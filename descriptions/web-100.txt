@@ -3,4 +3,4 @@ Feedback
 
 Please, rate RuCTF Olymp Quals. We've tried to make a good feedback form in vim, so it took too much time just to close it. But anyway we're waiting for your vote!
 
-http://tasks.kelte.cc:3001
+[http://tasks.ruc.tf:3001](http://tasks.ruc.tf:3001)

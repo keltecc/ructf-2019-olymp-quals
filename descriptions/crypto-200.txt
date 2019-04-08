@@ -3,4 +3,4 @@ Flags Storage
 
 This storage looks very secure, but I know it isn't! Please, hack it and get the flag!
 
-`nc tasks.kelte.cc 1002`
+`nc tasks.ruc.tf 1002`

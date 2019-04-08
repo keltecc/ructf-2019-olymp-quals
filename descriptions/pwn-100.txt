@@ -3,4 +3,4 @@ Baby Stack
 
 Attention! That stack is only for babies! Please, stand away from it.
 
-`nc tasks.kelte.cc 2001`
+`nc tasks.ruc.tf 2001`

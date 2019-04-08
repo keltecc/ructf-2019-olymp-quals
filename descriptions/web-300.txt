@@ -5,4 +5,4 @@ This hosting is as simple as simple its security. Can you hack it?
 
 _Note: this challenge includes a guessing part!_
 
-http://tasks.kelte.cc:3003
+[http://tasks.ruc.tf:3003](http://tasks.ruc.tf:3003)
